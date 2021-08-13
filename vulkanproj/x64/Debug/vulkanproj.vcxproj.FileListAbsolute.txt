@@ -1,0 +1,2 @@
+E:\Repos\vulkanengine\vulkanproj\x64\Debug\vulkanproj.exe
+E:\Repos\vulkanengine\vulkanproj\x64\Debug\vulkanproj.pdb
