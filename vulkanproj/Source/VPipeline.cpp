@@ -6,12 +6,12 @@
 #include <stdexcept>
 namespace vulk
 {
-	VPipeline::VPipeline(const std::string& vertFilepath, const std::string& fragFilepath)
+	VPipeline::VPipeline(VEngineDevice& device, const std::string& vertFilepath, const std::string& fragFilepath, const PipeLineConfigInfo& configInfo) : vEngineDevice(device)
 	{
-		createGraphicsPipeline(vertFilepath, fragFilepath);
+		createGraphicsPipeline(vertFilepath, fragFilepath, configInfo);
 	}
 
-	void VPipeline::createGraphicsPipeline(const std::string& vertFilepath, const std::string& fragFilepath)
+	void VPipeline::createGraphicsPipeline(const std::string& vertFilepath, const std::string& fragFilepath, const PipeLineConfigInfo& configInfo)
 	{
 		auto vertCode = readFile(vertFilepath);
 		auto fragCode = readFile(fragFilepath);
@@ -46,6 +46,28 @@ namespace vulk
 		return buffer;
 		
 	}
+
+	void VPipeline::createShaderModule(const std::vector<char>& code, VkShaderModule* shaderModule)
+	{
+		VkShaderModuleCreateInfo createInfo{};
+		createInfo.sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO;
+		createInfo.codeSize = code.size();
+		createInfo.pCode = reinterpret_cast<const uint32_t*>(code.data());
+
+		if (vkCreateShaderModule(vEngineDevice.device(), &createInfo, nullptr, shaderModule) != VK_SUCCESS)
+		{
+			throw std::runtime_error("failed to create shader modules");
+		}
+	}
+
+	PipeLineConfigInfo VPipeline::defaultPipelineConfigInfo(uint32_t width, uint32_t height)
+	{
+		PipeLineConfigInfo configInfo{};
+
+		return configInfo;
+	}
+
+
 
 
 

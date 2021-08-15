@@ -30,6 +30,9 @@
     <ClCompile Include="Source\VPipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\VEngineDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Driver.h">
@@ -38,7 +41,10 @@
     <ClInclude Include="Headers\VWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VPipeline.h">
+    <ClInclude Include="Headers\VPipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\VEngineDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

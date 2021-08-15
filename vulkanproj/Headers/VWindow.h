@@ -25,5 +25,7 @@ public:
 	VWindow& operator=(const VWindow&) = delete;
 	
 	bool shouldClose() { return glfwWindowShouldClose(window); }
+
+	void createWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
 };
 }

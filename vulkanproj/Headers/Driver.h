@@ -2,6 +2,7 @@
 
 #include "VWindow.h"
 #include "VPipeline.h"
+#include "VEngineDevice.h"
 
 namespace vulk
 {
@@ -13,8 +14,14 @@ public:
 
 	void run();
 private:
+	
 	VWindow vWindow{WIDTH, HEIGHT, "My Window" };
-	VPipeline vPipeline{ "Shaders/FirstShader.vert.spv", "Shaders/FirstShader.frag.spv" };
+	VEngineDevice vEngineDevice{ vWindow };
+	VPipeline vPipeline{
+		vEngineDevice,
+		"Shaders/FirstShader.vert.spv",
+		"Shaders/FirstShader.frag.spv",
+		VPipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT)};
 	
 };
 }

@@ -1,0 +1,10 @@
+﻿  Driver.cpp
+  main.cpp
+  VEngineDevice.cpp
+  VPipeline.cpp
+  VWindow.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 906 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  vulkanproj.vcxproj -> E:\Repos\vulkanengine\vulkanproj\x64\Release\vulkanproj.exe

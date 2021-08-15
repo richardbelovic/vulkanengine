@@ -157,13 +157,15 @@
   <ItemGroup>
     <ClCompile Include="Source\Driver.cpp" />
     <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\VEngineDevice.cpp" />
     <ClCompile Include="Source\VPipeline.cpp" />
     <ClCompile Include="Source\VWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Driver.h" />
+    <ClInclude Include="Headers\VEngineDevice.h" />
+    <ClInclude Include="Headers\VPipeline.h" />
     <ClInclude Include="Headers\VWindow.h" />
-    <ClInclude Include="VPipeline.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ShaderCompile.bat" />
