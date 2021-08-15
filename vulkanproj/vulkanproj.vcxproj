@@ -155,16 +155,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Driver.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="VWindow.cpp" />
+    <ClCompile Include="Source\Driver.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\VPipeline.cpp" />
+    <ClCompile Include="Source\VWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Driver.h" />
-    <ClInclude Include="VWindow.h" />
+    <ClInclude Include="Headers\Driver.h" />
+    <ClInclude Include="Headers\VWindow.h" />
+    <ClInclude Include="VPipeline.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FirstShader.vert" />
+    <None Include="ShaderCompile.bat" />
+    <None Include="Shaders\FirstShader.frag" />
+    <None Include="Shaders\FirstShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vulkanproj.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
