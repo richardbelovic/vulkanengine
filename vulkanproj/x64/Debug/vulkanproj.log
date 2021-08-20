@@ -1,6 +1,2 @@
-﻿  Driver.cpp
-  VEngineDevice.cpp
-  VPipeline.cpp
-  main.cpp
-  Generating Code...
+﻿  VPipeline.cpp
   vulkanproj.vcxproj -> E:\Repos\vulkanengine\vulkanproj\x64\Debug\vulkanproj.exe

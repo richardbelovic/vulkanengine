@@ -8,7 +8,18 @@ namespace vulk
 {
 	struct PipeLineConfigInfo
 	{
-		
+		VkViewport viewport;
+		VkRect2D scissor;
+		VkPipelineViewportStateCreateInfo viewportInfo;
+		VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
+		VkPipelineRasterizationStateCreateInfo rasterizationInfo;
+		VkPipelineMultisampleStateCreateInfo multisampleInfo;
+		VkPipelineColorBlendAttachmentState colorBlendAttachment;
+		VkPipelineColorBlendStateCreateInfo colorBlendInfo;
+		VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
+		VkPipelineLayout pipelineLayout = nullptr;
+		VkRenderPass renderPass = nullptr;
+		uint32_t subpass = 0;
 	};
 	class VPipeline
 	{
@@ -19,7 +30,7 @@ namespace vulk
 			const std::string& fragFilepath, 
 			const PipeLineConfigInfo& configInfo
 		);
-		~VPipeline() {}
+		~VPipeline();
 
 		VPipeline(const VPipeline&) = delete;
 		void operator=(const VPipeline&) = delete;
