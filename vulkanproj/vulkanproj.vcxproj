@@ -159,12 +159,14 @@
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\VEngineDevice.cpp" />
     <ClCompile Include="Source\VPipeline.cpp" />
+    <ClCompile Include="Source\VSwapChain.cpp" />
     <ClCompile Include="Source\VWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Driver.h" />
     <ClInclude Include="Headers\VEngineDevice.h" />
     <ClInclude Include="Headers\VPipeline.h" />
+    <ClInclude Include="Headers\VSwapChain.h" />
     <ClInclude Include="Headers\VWindow.h" />
   </ItemGroup>
   <ItemGroup>
