@@ -14,7 +14,6 @@ namespace vulk
 		VkPipelineRasterizationStateCreateInfo rasterizationInfo;
 		VkPipelineMultisampleStateCreateInfo multisampleInfo;
 		VkPipelineColorBlendAttachmentState colorBlendAttachment;
-		VkPipelineColorBlendStateCreateInfo colorBlendInfo;
 		VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
 		VkPipelineLayout pipelineLayout = nullptr;
 		VkRenderPass renderPass = nullptr;
@@ -34,6 +33,7 @@ namespace vulk
 		VPipeline(const VPipeline&) = delete;
 		void operator=(const VPipeline&) = delete;
 
+		void bind(VkCommandBuffer commandBuffer);
 		static PipeLineConfigInfo defaultPipelineConfigInfo(uint32_t width, uint32_t height);
 	private:
 		static std::vector<char> readFile(const std::string& filepath);

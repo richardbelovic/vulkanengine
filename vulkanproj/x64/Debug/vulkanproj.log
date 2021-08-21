@@ -1,3 +1,4 @@
 ﻿  Driver.cpp
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  VEngineDevice.cpp
+  Generating Code...
   vulkanproj.vcxproj -> E:\Repos\vulkanengine\vulkanproj\x64\Debug\vulkanproj.exe

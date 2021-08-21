@@ -2,9 +2,11 @@
   main.cpp
   VEngineDevice.cpp
   VPipeline.cpp
+  VSwapChain.cpp
   VWindow.cpp
   Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 906 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  537 of 1276 functions (42.1%) were compiled, the rest were copied from previous compilation.
+    362 functions were new in current compilation
+    116 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   vulkanproj.vcxproj -> E:\Repos\vulkanengine\vulkanproj\x64\Release\vulkanproj.exe
